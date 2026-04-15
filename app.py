@@ -14,7 +14,7 @@ load_dotenv()
 # 🔑 GEMINI API
 # ======================
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 # 🔥 Multiple models (fallback system)
 MODELS = [
