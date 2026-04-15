@@ -1,4 +1,3 @@
-```python
 import streamlit as st
 import pickle
 import pandas as pd
@@ -198,4 +197,4 @@ if st.session_state.show_history:
         st.dataframe(history, use_container_width=True)
     except:
         st.info("No history yet")
-```
+
