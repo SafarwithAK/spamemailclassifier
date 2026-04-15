@@ -72,7 +72,6 @@ SpamEmailClassifier/
 ├── model.pkl
 ├── vectorizer.pkl
 ├── spam.csv
-├── history.csv
 ├── requirements.txt
 ├── .env
 └── README.md
