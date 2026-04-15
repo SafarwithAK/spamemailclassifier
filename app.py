@@ -3,7 +3,8 @@ import pickle
 import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
-from google import genai
+import google.generativeai as genai
+
 import time
 import os
 from dotenv import load_dotenv
