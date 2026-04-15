@@ -182,20 +182,3 @@ if st.session_state.result is not None:
     st.markdown("### 🤖 AI Assistant")
     st.markdown(f'<div class="chatbox">{st.session_state.ai_reply}</div>', unsafe_allow_html=True)
 
-# ======================
-# 📜 HISTORY TOGGLE
-# ======================
-if st.button("📜 Show / Hide History"):
-    st.session_state.show_history = not st.session_state.show_history
-
-# ======================
-# 📜 HISTORY
-# ======================
-if st.session_state.show_history:
-    try:
-        history = pd.read_csv("history.csv")
-        st.markdown("### 📜 History")
-        st.dataframe(history, use_container_width=True)
-    except:
-        st.info("No history yet")
-
